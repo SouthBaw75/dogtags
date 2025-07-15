@@ -46,8 +46,24 @@
       width: 100%;
       max-width: 360px;
       border-radius: 12px;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-button {
+      display: inline-block;
+      background-color: #c62828;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .text-button:hover {
+      background-color: #a52121;
     }
 
     .contact-box {
@@ -81,12 +97,6 @@
       color: #555;
       text-align: center;
     }
-
-    @media (min-width: 600px) {
-      .card {
-        flex-direction: column;
-      }
-    }
   </style>
 </head>
 <body>
@@ -96,6 +106,8 @@
 
   <div class="card">
     <img src="https://i.imgur.com/qODwHqm.jpeg" alt="Finley the Yorkie" class="dog-photo" />
+
+    <a class="text-button" href="sms:+13375739555">📱 Text My Human</a>
 
     <div class="contact-box">
       <h2>📞 Contact My Human</h2>
@@ -110,4 +122,3 @@
 
 </body>
 </html>
-
